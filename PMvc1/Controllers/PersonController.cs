@@ -30,7 +30,8 @@ namespace PMvc1.Controllers
             else
             {
                 ViewBag.Message = "Invalid";
-                ViewBag.Status = "Fail";
+                ViewBag.Status = "Fail"; 
+                //that is Right>>>>
             }
 
             return View();
