@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="container">
+<h1>Create</h1>
+    @if (ViewBag.Message != null)
+    {
+        if(ViewBag.Status == "Success")
+        {
+            <div class="alert alert-success">
+            @ViewBag.Message 
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-danger">
+                @ViewBag.Message
+            </div>
+        }
+    }
+<form method="post">
+    <table>
+        <tr>
+            <th>
+                Name:
+            </th>
+            <td>
+                <input id="Pname" name="Pname" />
+            </td>
+        </tr>
+        <tr>
+            <th>
+                Age:
+            </th>
+            <td>
+                <input id="Page" name="Page" />
+            </td>
+        </tr>
+    </table>
+    <button class="btn btn-success" type="submit">Send</button>
+</form>
+</div>
+
